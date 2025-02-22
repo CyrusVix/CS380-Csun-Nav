@@ -1,0 +1,30 @@
+import Profile from "./components/Profile";
+import MyButton from "./components/MyButton";
+
+/* MAIN */
+export default function MyApp() {
+  return (
+    <div>
+      <h1 style={{ color: "red" }}>Welcome to CSUN Nav</h1>
+      {/*Buttons for user to interact with*/}
+      <MyButton name="Log In" />
+      <MyButton name="Map" />
+      <MyButton name="Search" />
+      <MyButton name="Filter" />
+      <MyButton name="Favorites" />
+      <MyButton name="Notes" />
+
+      <p></p>
+      <h5> Testing Area: </h5>
+      <Profile />
+      <p></p>
+      <a
+        href="https://3dmap.csun.edu/?id=1100#!ct/25911,25835?s/"
+        target="_blank"
+      >
+        This is a hyper link
+      </a>
+      <p></p>
+    </div>
+  );
+}
